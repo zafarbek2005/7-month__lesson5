@@ -1,0 +1,55 @@
+// Kontakt.scss
+
+// Konteynerin genel stili
+.container {
+    max-width: 400px; // Konteynerin maksimum genişliği
+    margin: 0 auto; // Konteyneri ortalar
+    padding: 20px; // İçeriğin etrafına biraz dolgu ekler
+    background-color: #f9f9f9; // Açık gri arka plan rengi
+    border-radius: 8px; // Yumuşak köşeler sağlar
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Hafif bir gölge ekler
+    margin-top:50px;
+  }
+  
+  // Başlık stil
+  h2 {
+    font-size: 24px; // Başlık metin boyutu
+    margin-bottom: 20px; // Başlık ile form arasına boşluk bırakır
+  }
+  
+  // Inputların ve butonun genel stili
+  input[type="text"],
+  textarea,
+  #bn{
+    width: 100%; // Genişlik tümüyle
+    margin-bottom: 15px; // Her bir giriş alanı arasına 15 piksel boşluk bırakır
+    padding: 10px; // Giriş alanlarına ve butona biraz dolgunluk ekler
+    border: 1px solid #ddd; // Hafif gri bir kenarlık ekler
+    border-radius: 4px; // Yumuşak köşeler sağlar
+    font-size: 16px; // Metin boyutunu 16 piksel yapar
+    transition: border-color 0.3s; // Kenarlık rengindeki geçiş için yumuşak bir animasyon ekler
+  
+    // Odaklandığında kenarlığın rengini değiştirir
+    &:focus {
+      border-color: #007bff; // Odaklandığında mavi bir kenarlık ekler
+      outline: none; // Odak çerçevesini kaldırır
+    }
+  }
+  
+  // Butonun stil
+#bn{
+    background-color: #000000; // Mavi arka plan rengi
+    color: #fff; // Beyaz yazı rengi
+    cursor: pointer; // İşaretçiyi bir el işareti haline getirir
+    border: none; // Kenarlığı kaldırır
+    border-radius: 4px; // Yumuşak köşeler sağlar
+    font-size: 18px; // Metin boyutunu 18 piksel yapar
+    padding: 12px 20px; // Butona biraz dolgunluk ekler
+    transition: background-color 0.3s; // Arka plan rengindeki geçiş için yumuşak bir animasyon ekler
+  
+    // Üzerine gelindiğinde arka plan rengini değiştirir
+    &:hover {
+      background-color: #000000; // Koyu mavi arka plan rengi
+    }
+  }
+  
